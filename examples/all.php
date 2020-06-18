@@ -26,12 +26,12 @@ $db->from('table_name')
 
 // left join
 $db->from('table_name')
-  ->left_join('other_table', '%s.other_table_id = %s.table_id')
+  ->leftJoin('other_table', '%s.other_table_id = %s.table_id')
   ->run();
 
 // right join
 $db->from('table_name')
-  ->right_join('other_table', '%s.other_table_id = %s.table_id')
+  ->rightJoin('other_table', '%s.other_table_id = %s.table_id')
   ->run();
 
 // orderby
